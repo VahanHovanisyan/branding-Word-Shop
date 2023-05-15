@@ -1,0 +1,39 @@
+@mixin media-adaptiv-font($maxSize, $minSize) {
+	$addSize: $maxSize - $minSize;
+	$maxWidth: $wrapperWidth - 320;
+	font-size: #{$maxSize + px};
+	@media (max-width: ($wrapperWidth + px)) {
+		font-size: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth}));
+	}
+}
+
+@mixin media-adaptiv-all($property, $maxSize, $minSize) {
+	$addSize: $maxSize - $minSize;
+	$maxWidth: $wrapperWidth - 320;
+	#{$property}: #{$maxSize + px};
+	@media (max-width: ($wrapperWidth + px)) {
+		#{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth}));
+	}
+}
+
+@mixin adaptiv-font($maxSize, $minSize) {
+	$addSize: $maxSize - $minSize;
+	$maxWidth: $wrapperWidth - 320;
+	font-size: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth}));
+}
+
+@mixin adaptiv-all($property, $maxSize, $minSize) {
+	$addSize: $maxSize - $minSize;
+	$maxWidth: $wrapperWidth - 320;
+	#{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth}));
+}
+
+@mixin font-face($font-family, $url, $weight, $style) {
+	@font-face {
+		font-family: "#{$font-family}";
+		src: url("../fonts/#{$url}.woff") format("woff"), url("../fonts/#{$url}.woff2") format("woff2");
+		font-weight: #{$weight};
+		font-display: swap;
+		font-style: $style;
+	}
+}

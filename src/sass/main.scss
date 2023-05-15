@@ -1,0 +1,33 @@
+@import "config/_vars";
+@import "config/_mixin";
+html {
+	scroll-behavior: smooth;
+}
+body {
+	margin: 0;
+	&.lock-scroll {
+		overflow: hidden;
+		position: fixed;
+		left: 0;
+		height: 100vh;
+		width: 100vw;
+	}
+}
+.wrapper {
+	max-width: $wrapperWidth + px;
+	display: flex;
+	flex-direction: column;
+	margin: 0px auto;
+	min-height: 100%;
+	overflow: hidden;
+	background-color: #202020;
+	font-family: Montserrat, Arial;
+}
+@import "config/_null-style";
+@import "config/_fonts";
+@import "config/_repeat-class";
+@import "config/_icon-fonts";
+@import "layout/_header";
+@import "layout/_main";
+@import "layout/_footer";
+@import "layout/main-sections/first";

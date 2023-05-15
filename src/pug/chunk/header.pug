@@ -1,0 +1,47 @@
+header.header
+	.header__container.container
+		.header__top-block.flex-v-center
+			form.header__input-box(action="#" method="post" data-da="header__menu-container" data-da-position="first" data-da-resolution="767.98")
+				button.header__search-btn.btn-reset
+					svg.header__search-icon
+						use(xlink:href="img/sprite.svg#search")
+				input.header__input-search(type="search" name="search" placeholder="Поиск" required)
+			a.header__logo.logo(href="#")
+				img(src="img/logo.png", alt="site logotype")
+			.header__icons-and-lang-box.flex-v-center
+				ul.header__lang-list.flex-v-center(data-da="header__menu-container" data-da-position="last" data-da-resolution="479.98")
+					li.header__lang-item
+						button.header__lang-btn.btn-reset RU
+					li.header__lang-item
+						button.header__lang-btn.btn-reset UA
+				ul.header__icon-list.flex-v-center
+					li.header__icon-item
+						a.header__icon-link.cart-icon(href="#")
+							svg
+								use(xlink:href="img/sprite.svg#cart")
+							span.cart-icon__quantity 0
+					li.header__icon-item
+						a.header__icon-link(href="#")
+							svg
+								use(xlink:href="img/sprite.svg#heart")
+			button.header__burger.burger.btn-reset
+				span.burger__line.burger__line_top
+				span.burger__line.burger__line_middle
+				span.burger__line.burger__line_bottom
+		nav.header__menu.menu
+			.header__menu-container
+				ul.header__menu-list.menu__list.flex-v-center
+					li.menu__item.header__menu-item
+						a.menu__link(href="#") Категория
+					li.menu__item.header__menu-item
+						a.menu__link(href="#") Категория
+					li.menu__item.header__menu-item
+						a.menu__link(href="#") Категория
+					li.menu__item.header__menu-item
+						a.menu__link(href="#") Категория
+					li.menu__item.header__menu-item
+						a.menu__link(href="#") Категория
+					li.menu__item.header__menu-item
+						a.menu__link(href="#") Категория
+					li.menu__item.header__menu-item
+						a.menu__link(href="#") Категория
