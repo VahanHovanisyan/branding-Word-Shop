@@ -2,26 +2,26 @@ header.header
 	.header__container.container
 		.header__top-block.flex-v-center
 			form.header__input-box(action="#" method="post" data-da="header__menu-container" data-da-position="first" data-da-resolution="767.98")
-				button.header__search-btn.btn-reset
+				button.header__search-btn.btn-reset(aria-label="начать поиск")
 					svg.header__search-icon
 						use(xlink:href="img/sprite.svg#search")
 				input.header__input-search(type="search" name="search" placeholder="Поиск" required)
-			a.header__logo.logo(href="#")
+			a.header__logo.logo(href="#" aria-label="логотип сайта masons branding wordshop")
 				img(src="img/logo.png", alt="site logotype")
 			.header__icons-and-lang-box.flex-v-center
-				ul.header__lang-list.flex-v-center(data-da="header__menu-container" data-da-position="last" data-da-resolution="479.98")
+				ul.header__lang-list.flex-v-center(aria-label="выбор языка" data-da="header__menu-container" data-da-position="last" data-da-resolution="479.98")
 					li.header__lang-item
-						button.header__lang-btn.btn-reset RU
+						button.header__lang-btn.btn-reset(aria-label="русский язык") RU
 					li.header__lang-item
-						button.header__lang-btn.btn-reset UA
+						button.header__lang-btn.btn-reset(aria-label="украинский язык") UA
 				ul.header__icon-list.flex-v-center
 					li.header__icon-item
-						a.header__icon-link.cart-icon(href="#")
+						a.header__icon-link.cart-icon(href="#" aria-label="корзина товаров")
 							svg
 								use(xlink:href="img/sprite.svg#cart")
 							span.cart-icon__quantity 0
 					li.header__icon-item
-						a.header__icon-link(href="#")
+						a.header__icon-link(href="#" aria-label="избранные товары")
 							svg
 								use(xlink:href="img/sprite.svg#heart")
 			button.header__burger.burger.btn-reset

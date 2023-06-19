@@ -1,5 +1,8 @@
 import "./libs/dinamic-adaptiv.js";
-import "./module/burger-menu.js";
+import "./libs/slider.js";
+import "./module/getTabs.js";
+import "./module/burgerMenu.js";
+import "./module/headerMenu.js";
 import "./module/accordion.js"
 import "./module/customSelect.js"
 import "./module/lang.js"

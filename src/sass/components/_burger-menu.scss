@@ -1,0 +1,82 @@
+.burger {
+	display: none;
+	flex: 0 0 30px;
+	width: 30px;
+	height: 30px;
+	position: relative;
+	@media (max-width: 991.98px) {
+		display: block;
+		z-index: 3;
+		&__line {
+			position: absolute;
+			left: 0;
+			height: 3px;
+			width: 100%;
+			background-color: var(--white);
+			border-radius: 3px;
+			transition: transform 0.3s ease 0s, top 0.3s ease 0s, opacity 0.3s ease 0s, bottom 0.3s ease 0s;
+			&_top {
+				top: 0;
+			}
+			&_middle {
+				top: 50%;
+				transform: translateY(-50%);
+			}
+			&_bottom {
+				bottom: 0;
+			}
+		}
+		&.burger_open {
+			.burger__line {
+				&_top {
+					top: 50%;
+					transform: rotate(45deg) translateY(-50%);
+				}
+				&_middle {
+					opacity: 0;
+				}
+				&_bottom {
+					transform: rotate(-45deg) translateY(50%);
+					bottom: 50%;
+				}
+			}
+		}
+	}
+}
+
+
+.menu {
+	// .menu__list
+
+	&__list {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		gap: 10px;
+		justify-content: space-between;
+		@media (max-width: 991.98px) {
+			flex-direction: column;
+		}
+	}
+
+	// .menu__item
+
+	&__item {
+		color: var(--white);
+		font-weight: 300;
+	}
+
+	// .menu__link
+
+	&__link {
+		font-weight: 700;
+		font-size: 18px;
+		line-height: 130%;
+		color: inherit;
+		text-decoration: none;
+		@media (max-width: 991.98px) {
+			font-size: 25px;
+			font-weight: 700;
+		}
+	}
+}

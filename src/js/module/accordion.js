@@ -1,4 +1,4 @@
-// // accordion
+
 // const accordionController = (accordionElem,speed) => {
 // 	const accordion = document.querySelector(accordionElem);
 // 	accordion.addEventListener('click', function (event) {
@@ -39,7 +39,6 @@
 // 	});
 // };
 // accordionController('.accordion', 300);
-
 
 // class Accordion {
 // 	constructor(target, config) {
