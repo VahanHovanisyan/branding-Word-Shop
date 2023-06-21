@@ -52,5 +52,8 @@
     "webpack": "^5.76.1",
     "webpack-stream": "^7.0.0"
   },
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "just-validate": "^4.2.0"
+  }
 }

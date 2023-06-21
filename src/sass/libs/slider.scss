@@ -9,8 +9,8 @@
 .swiper-button-prev,
 .swiper-button-next {
 	position: absolute;
-	width: 42px;
-	height: 42px;
+	@include media-adaptiv-all(width,42,20);
+	@include media-adaptiv-all(height,42,20);
 	border-right: 3px solid var(--white);
 	border-bottom: 3px solid var(--white);
 	display: block;
